@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg changer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="topDiv">
+        <button id="grey">Grey</button>
+        <button id="blue">Blue</button>
+        <button id="pink">Pink</button>
+        <button id="red">Red</button>
+        <h2>This is Background changer.Click on any frame to see the respective change.</h2>
+    </div>
+
+    <script>
+        const greyColor = document.getElementById("grey");
+        const body = document.body;
+
+        greyColor.onclick = function () {
+            body.classList.add("colorGrey");
+            greyColor.style.backgroundColor = "gray";
+
+        }
+
+        const blueColor = document.getElementById("blue");
+
+        blueColor.onclick = function () {
+            body.classList.add("colorBlue");
+            blueColor.style.backgroundColor = "blue";
+
+        }
+
+        const pinkColor = document.getElementById("pink");
+
+        pinkColor.onclick = function () {
+            body.classList.add("colorPink");
+            pinkColor.style.backgroundColor = "pink";
+
+        }
+
+        const redColor = document.getElementById("red");
+
+        redColor.onclick = function () {
+            body.classList.add("colorRed");
+            redColor.style.backgroundColor = "red";
+
+        }
+    </script>
+
+</body>
+
+</html>

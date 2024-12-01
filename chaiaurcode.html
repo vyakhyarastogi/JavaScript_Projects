@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code logic of bg changer</title>
+
+
+</head>
+<style>
+    .button {
+        height: 200px;
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid black;
+        display: inline-block;
+
+
+
+        /* Change cursor to pointer on hover */
+    }
+
+    body {
+
+
+        background-color: white;
+        /* Add a default background color */
+        text-align: center;
+    }
+</style>
+
+
+
+<body>
+    <h1>
+        Color Scheme Switcher
+    </h1>
+
+    <!-- <div class="button" id="grey"></div>
+    <div class="button" id="blue"></div>
+    <div class="button" id="pink"></div>
+    <div class="button" id="red">
+    </div> -->
+
+    <span class="button" id="grey"></span>
+    <span class="button" id="blue"></span>
+    <span class="button" id="pink"></span>
+    <span class="button" id="red">
+    </span>
+
+
+
+    <!-- <button class="button" id="grey"></button>
+    <button class="button" id="blue"></button>
+    <button class="button" id="pink"></button>
+    <button class="button" id="red"></button> -->
+
+</body>
+<script>
+    const buttons = document.querySelectorAll(".button");
+    const body = document.querySelector("body");
+
+    console.log(buttons);
+
+    // thats we since buttons is an nodelist we can put foreach on it
+
+    buttons.forEach(function (button) {
+        console.log(button);
+        button.addEventListener("click", function (e) {
+            console.log(e);
+            console.log(e.target);
+            if (e.target.id === 'grey') {
+                body.style.backgroundColor = e.target.id // ot "grey"
+
+            }
+            if (e.target.id === 'blue') {
+                body.style.backgroundColor = e.target.id // ot "grey"
+            }
+            if (e.target.id === 'pink') {
+                body.style.backgroundColor = e.target.id // ot "grey"
+            }
+            if (e.target.id === 'red') {
+                body.style.backgroundColor = e.target.id // ot "grey"
+            }
+
+        })
+    })
+
+</script>
+
+</html>

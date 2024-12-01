@@ -1,0 +1,41 @@
+button {
+
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-color: black;
+
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    text-align: center;
+
+}
+
+
+.colorGrey {
+    background-color: gray;
+}
+
+.colorBlue {
+    background-color: blue;
+
+}
+
+.colorPink {
+    background-color: pink;
+}
+
+.colorRed {
+    background-color: red;
+}
